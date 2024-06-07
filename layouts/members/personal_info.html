@@ -10,7 +10,7 @@
           <!-- START: Personal Information -->
           <div class="row g-4 pb-5">
             <div class="col-12 col-md-6 col-lg-3">
-              <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
+              <div class="card text-decoration-none h-100" style="border-width: 0;">
                 <div class="aspect-ratio-1x1">
                   {{ with ( partial "utilities/get-featured-image.html" . ) }}
                     {{ partial "utilities/image-portrait" . }}
@@ -19,11 +19,11 @@
                 <div class="card-body" style="padding: 16px; padding-left: 10%; padding-right: 10%;">
                   <h5 class="card-title fw-semibold" style="text-align: center;">{{ .Title }}</h5>
                 </div>
-              </a>
+              </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-8">
-              <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
+              <div class="card text-decoration-none h-100" style="border-width: 0;">
                 <h5 class="text-black-61" style="margin: 10px; margin-bottom: 5px"><b>Biography</b></h5>
                 <p class="text-black-61" style="margin: 10px; margin-top: 0px; text-align: justify">{{ .Params.Biography }}</p>
 
@@ -36,15 +36,80 @@
                 
                 <h5 class="text-black-61" style="margin: 10px; margin-bottom: 5px"><b>Contact</b></h5>
                 <p class="text-black-61" style="margin: 10px; margin-top: 0px"><b>Email: </b>{{ .Params.Email }} &nbsp;&nbsp; <b>Tel: </b>{{ .Params.Telephone }}</p>
-              </a>
+              </div>
             </div>
+          </div>
+          <!-- END -->
+
+          <!-- START: Professional Experiences -->
+          <div class="row g-4 pb-5">
+            <h5 class="text-black-61 fs-4" style="margin: 10px;"><b>Professional Experiences</b></h5>
+            <ul style="list-style-position: outside; margin: 10px; margin-top: 0px; margin-bottom: 0px">
+              {{ range .Params.Experiences }}
+                {{ $exp_from := index . "exp_from" }}
+                {{ $exp_to   := index . "exp_to" }}
+                {{ $exp_desc := index . "exp_desc" }}
+                {{ if eq $exp_from "" }}{{ $exp_from = $exp_to }}{{ end }}
+                <li class="text-black-61 fs-6" style="margin: 0px; margin-left: 30px; margin-bottom: 5px;">
+                  <p style="width: 40px; display: inline-block; margin: 0px">{{ $exp_from }}</p> - <p style="width: 40px; display: inline-block; margin: 0px">{{ $exp_to }}</p> &nbsp;&nbsp; {{ $exp_desc }}
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+          <!-- END -->
+
+          <!-- START: Professional Awards & Honers -->
+          <div class="row g-4 pb-5">
+            <h5 class="text-black-61 fs-4" style="margin: 10px;"><b>Awards and Honers</b></h5>
+            <ul style="list-style-position: outside; margin: 10px; margin-top: 0px; margin-bottom: 0px">
+              {{ range .Params.Awards_honer }}
+                <li class="text-black-61 fs-6" style="margin: 0px; margin-left: 30px; margin-bottom: 5px;"> {{ . }} </li>
+              {{ end }}
+            </ul>
+          </div>
+          <!-- END -->
+
+          <!-- START: Professional Experiences -->
+          <div class="row g-4 pb-5">
+            <h5 class="text-black-61 fs-4" style="margin: 10px;"><b>Professional Activities</b></h5>
+            <ul style="list-style-position: outside; margin: 10px; margin-top: 0px; margin-bottom: 0px">
+              {{ range .Params.Activities }}
+                {{ $act_type := index . "act_type" }}
+                {{ $act_desc := index . "act_desc" }}
+                <li class="text-black-61 fs-6" style="margin: 0px; margin-left: 30px; margin-bottom: 5px;">
+                  <p style="display: inline-block; margin: 0px; font-weight: bold">[{{ $act_type }}]</p> {{ $act_desc }}
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+          <!-- END -->
+
+          <!-- START: Publications -->
+          <div class="row g-4 pb-5">
+            <h5 class="text-black-61 fs-4" style="margin: 10px;"><b>Publications</b></h5>
+            <ul style="list-style-position: outside; margin: 10px; margin-top: 0px; margin-bottom: 0px">
+              {{ range .Params.Publications }}
+                {{ $pub_title := index . "pub_title" }}
+                {{ $pub_venue := index . "pub_venue" }}
+                {{ $pub_date  := index . "pub_date"  }}
+                {{ $pub_url   := index . "pub_url"   }}
+                <div style="width: 100%; padding: 10px; padding-right: 0px; padding-left: 0px;">
+                  <a class="card text-decoration-none h-100" href="{{ $pub_url }}">
+                    <div class="card-body">
+                      <h5 class="card-title fw-semibold">{{ $pub_title}}</h5>
+                      <p class="card-text text-black-61" style="display: inline-block;">{{ $pub_venue }}, {{ $pub_date }}</p>
+                    </div>
+                  </a>
+                </div>
+              {{ end }}
+            </ul>
           </div>
           <!-- END -->
 
         </div>
       </div>
-      <div class="row pb-5">
-      </div>
+      <!-- <div class="row pb-5">
+      </div> -->
     </div>
   </section>
 {{ end }}
