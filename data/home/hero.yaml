@@ -1,0 +1,15 @@
+enabled: true
+id: "hero"
+
+content:
+  title: "Computer Architecture & Systems Lab"
+  text: "**COMPASSLAB** is a computer architecture research group in the Department of Electrical and Computer Engineering at **Sungkyunkwan University (SKKU)**."
+
+  buttonPrimary:
+    label: "Deep dive into COMPASSLAB!"
+    url: "/about"
+
+  buttonSecondary:
+    label: "Recent News"
+    url: ""
+

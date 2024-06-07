@@ -1,0 +1,50 @@
+{{ define "main" }}
+  <section class="section blog-single py-5">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-12">
+          {{ with .Title }}
+            <h2 class="display-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
+          {{ end }}
+          
+          <!-- START: Personal Information -->
+          <div class="row g-4 pb-5">
+            <div class="col-12 col-md-6 col-lg-3">
+              <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
+                <div class="aspect-ratio-1x1">
+                  {{ with ( partial "utilities/get-featured-image.html" . ) }}
+                    {{ partial "utilities/image-portrait" . }}
+                  {{ end }}
+                </div>
+                <div class="card-body" style="padding: 16px; padding-left: 10%; padding-right: 10%;">
+                  <h5 class="card-title fw-semibold" style="text-align: center;">{{ .Title }}</h5>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-8">
+              <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
+                <h5 class="text-black-61" style="margin: 10px; margin-bottom: 5px"><b>Biography</b></h5>
+                <p class="text-black-61" style="margin: 10px; margin-top: 0px; text-align: justify">{{ .Params.Biography }}</p>
+
+                <h5 class="text-black-61" style="margin: 10px; margin-bottom: 5px"><b>Research Interests</b></h5>
+                <ul style="list-style-position: outside;">
+                  {{ range .Params.Interests }}
+                    <li class="text-black-61" style="margin: 0px; margin-left: 10px; margin-right: 10px">{{ . }}</li>
+                  {{ end }}
+                </ul>
+                
+                <h5 class="text-black-61" style="margin: 10px; margin-bottom: 5px"><b>Contact</b></h5>
+                <p class="text-black-61" style="margin: 10px; margin-top: 0px"><b>Email: </b>{{ .Params.Email }} &nbsp;&nbsp; <b>Tel: </b>{{ .Params.Telephone }}</p>
+              </a>
+            </div>
+          </div>
+          <!-- END -->
+
+        </div>
+      </div>
+      <div class="row pb-5">
+      </div>
+    </div>
+  </section>
+{{ end }}

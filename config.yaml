@@ -1,0 +1,72 @@
+title: "COMPASSLAB"
+baseURL: "https://www.example.com/"
+theme: "up-business-theme"
+languageCode: "en-us"
+
+summaryLength: 20
+
+params:
+  title: "COMPASSLAB"
+  description: "The COMPASS LAB is a computer architecture research group in the Department of Electrical and Computer Engineering at SKKU."
+  images: 
+    - "images/hero-image.png"
+
+  logo: "images/lab/lab-logo-small.png"
+
+  favicons:
+    themeColor: "#FFFFFF"
+    backgroundColor: "#FFFFFF"
+    faviconColor: "#000000"
+
+  social:
+    dribbble: "#"
+    instagram: "#"
+    facebook: "#"
+    twitter: "#"
+
+  location:
+    - "2066, Seobu-ro, Jangan-gu, Suwon-si, Gyeonggi-do, Republic of Korea Sungkyunkwan University Semiconductor Building Room #400526"
+
+  contact:
+    - "seokin@skku.edu"
+    - "+82-31-299-4915"
+
+  copyright: "© 2024 COMPASSLAB All Rights Reserved"
+
+menus:
+  main:
+    - name: "Home"
+      url: /
+      weight: 1
+    
+    - name: "About"
+      url: "/about"
+      weight: 2
+
+    - name: "Members"
+      url: "/members"
+      weight: 3
+
+    - name: "Projects"
+      url: "/projects"
+      weight: 4
+
+    - name: "Publications"
+      url: "/publications"
+      weight: 5
+
+    - name: "Schedule"
+      url: "/schedule"
+      weight: 6
+
+    - name: "Memories"
+      url: "/memories"
+      weight: 7
+
+    - name: "Blog"
+      url: "/blog"
+      weight: 8
+
+taxonomies:
+  series: "series"
+  tags: "tags"
