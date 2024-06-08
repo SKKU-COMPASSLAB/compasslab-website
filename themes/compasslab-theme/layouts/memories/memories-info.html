@@ -1,0 +1,42 @@
+{{ define "main" }}
+  <section class="section blog-single py-5">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-12">
+          {{ with .Title }}
+            <h2 class="fs-1 fw-bold text-center text-primary">Memories</h2>
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- START: Blog Contents -->
+      <div class="row pb-5">
+        <div class="custom-blog-content fs-5">
+          {{ .Content }}
+        </div>
+      </div>
+      <!-- END -->
+
+      <!-- START: Gallery -->
+      <h3 class="fs-3 text-primary" style="margin-bottom: 40px">Gallery</h3>
+      <div class="row g-4 pb-5">
+        {{ $current_page := . }}
+        {{ range .Params.Gallery }}
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="aspect-ratio-1x1">
+              {{ with ($current_page.Resources.ByType "image").GetMatch . }}
+                <a href="{{ .Permalink }}">
+                  <img class="" src="{{ .Permalink }}" alt="{{ .Title }}" width="{{ .Width }}" height="{{ .Height }}">
+                </a>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+      <!-- END -->
+
+      <div class="row pb-5">
+      </div>
+    </div>
+  </section>
+{{ end }}

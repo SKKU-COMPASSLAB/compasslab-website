@@ -1,0 +1,20 @@
+{{ define "main" }}
+  <section class="section blog-single py-5">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-12">
+          <h2 class="fs-1 fw-bold text-center text-primary">{{ .Title }}</h2>
+        </div>
+      </div>
+      <!-- START: Recent News -->
+      <div class="row g-4 pb-3">
+        <ul style="list-style-position: outside; margin-top: 0px; margin-bottom: 0px">
+          {{ range .Params.News }}
+            <li class="text-black-61 fs-5" style="margin: 0px; margin-left: 30px; margin-bottom: 5px;"> {{ . }} </li>
+          {{ end }}
+        </ul>
+      </div>
+      <!-- END -->
+    </div>
+  </section>
+{{ end }}

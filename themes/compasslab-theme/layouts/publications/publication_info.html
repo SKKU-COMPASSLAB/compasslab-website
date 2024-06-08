@@ -1,0 +1,95 @@
+{{ define "main" }}
+  <section class="section blog-single py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-xl-6">
+          <h2 class="fs-1 fw-bold text-center text-primary">Publications</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center pb-5">
+        <div>
+          <!-- START: Thumbnail -->
+          {{ with (.Resources.ByType "image").GetMatch .Params.Pub_thumbnail }}
+            <div class="d-none d-xl-block" style="padding: 30px 10px 0 10px;"></div>
+              <img class="d-none d-xl-block" src="{{ .Permalink }}" alt="{{ .Title }}" style="width: 60%; margin: auto;">
+            </div>
+          {{ end }}
+          <!-- END -->
+
+          <!-- START: Publication title -->
+          {{ $pub_url_exist := false }}
+          {{ $pub_url := "" }}
+          {{ with .Params.Pub_url }}
+              {{ $pub_url_exist = true }}
+              {{ $pub_url = . }}
+          {{ end }}
+          
+          <div class="pb-3" style="margin-top: 30px;">
+            {{ $cls_url := index .Site.Params.PubClasses .Params.Pub_class }}
+            <!-- <a class="text-black-61 fs-3 fw-bold custom-link" href="{{ $cls_url }}">{{ .Params.Pub_class }}</a> -->
+            <a class="btn btn-outline-primary fs-5 fw-semibold" style="padding: 2px 5px 2px 5px; margin: 0 5px 5px 0px" href="{{ $cls_url }}">{{ .Params.Pub_class }}</a>
+
+            {{ with .Title }}
+              {{ if $pub_url_exist }}
+                <a class="text-black-61 fs-3 fw-bold custom-link" href="{{ $pub_url }}">{{ . }}</a>
+              {{ else }}
+                <p class="text-black-61 fs-3 fw-bold">{{ . }}</p>
+              {{ end }}
+            {{ end }}
+          </div>
+          <!-- END -->
+
+          <!-- START: Publication Venue -->
+          {{ with .Params.Pub_venue }}
+            <h4 class="text-black-50 fs-4 pb-3 fw-semibold">{{ . }}</h4>
+          {{ end }}
+          <!-- END -->
+
+          <!-- START: Authors -->
+          <div class="pb-4">
+            {{ $site := .Site }}
+            <ul style="list-style: none; margin: 0; padding: 0;">
+              {{ range .Params.Pub_authors }}
+                {{ $author_url_exist := false }}
+                {{ $pub_author := . }}
+                {{ with $site.GetPage . }}
+                    {{ $author_url_exist = true }}
+                    {{ $pub_author = .Title }}
+                {{ end }}
+
+                <li class="" style="display: inline-block;">
+                  {{ if $author_url_exist }}
+                    {{ $author_url := . }}
+                    <a class="text-black-61 fs-5 fw-semibold custom-link" style="margin: 0; padding: 0; padding-right: 20px" href="{{ $author_url }}">{{ $pub_author }}</a>
+                  {{ else }}
+                    <p class="text-black-61 fs-5 fw-semibold" style="margin: 0; padding: 0; padding-right: 20px">{{ $pub_author }}</p>
+                  {{ end }}
+                </li>
+              {{ end }} 
+            </ul>
+          </div>
+          <!-- END -->
+
+          <!-- START: Abstract -->
+          <div class="pb-3">
+            <p class="text-black-61 fs-4 fw-semibold">Abstract</p>
+            <p class="text-black-61 fs-5" style="text-align: justify">{{ .Params.Pub_abstract }}</p>
+          </div>
+          <!-- END -->
+
+          <!-- START: Keywords -->
+          <div class="pb-3">
+            <p class="text-black-61 fs-4 fw-semibold">Keywords</p>
+            {{ range .Params.Pub_keywords }}
+              <li class="text-black-61 fs-5" style="margin: 0; padding: 0;">
+                {{ . }}
+              </li>
+            {{ end }} 
+          </div>
+          <!-- END -->
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
