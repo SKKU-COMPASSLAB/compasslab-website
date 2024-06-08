@@ -32,6 +32,15 @@ params:
 
   copyright: "© 2024 COMPASSLAB All Rights Reserved"
 
+  customCss: ["css/hovering.css"]
+
+  pubClasses:
+    ACC: /projects/accelerator
+    CA:  /projects/computer_architecture
+    MS:  /projects/memory_system
+    NDP: /projects/near_data_processing
+    OS:  /projects/operating_systems
+
 menus:
   main:
     - name: "Home"
@@ -62,9 +71,9 @@ menus:
       url: "/memories"
       weight: 7
 
-    - name: "Blog"
-      url: "/blog"
-      weight: 8
+    # - name: "Blog"
+    #   url: "/blog"
+    #   weight: 8
 
 taxonomies:
   series: "series"

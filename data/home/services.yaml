@@ -6,7 +6,7 @@ content:
   text: "COMPASSLAB is profoundly researching in computer architectures, memory systems and domain-specific accelerators."
 
   cards:
-    - image: "images/services-web-development.png"
+    - image: "images/research-area/research-processor.png"
       title: "Processor Architectures"
       # text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       features: [
@@ -15,7 +15,7 @@ content:
         "Fault-tolerant Architectures"
       ]
 
-    - image: "images/services-web-development.png"
+    - image: "images/research-area/research-memory.png"
       title: "Memory Systems"
       # text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
       features: [
@@ -25,7 +25,7 @@ content:
         "Secure Memory"
       ]
 
-    - image: "images/services-web-development.png"
+    - image: "images/research-area/research-accelerator.png"
       title: Accelerator Architecture
       # text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
       features: [

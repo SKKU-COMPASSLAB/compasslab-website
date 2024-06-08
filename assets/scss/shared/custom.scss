@@ -1,0 +1,37 @@
+.custom-link {
+    text-decoration: none;
+}
+
+.custom-link:hover {
+    color: rgb(31, 83, 255);
+}
+
+.text-black-50 { color: rgba(0, 0, 0, 0.50); }
+
+.custom-authors-li-margin {
+    margin: -2px 0 0 0;
+}
+
+.custom-authors-li-margin:first-child {
+    margin: 0 0 0 0;
+}
+
+.custom-nav-menu-padding {
+    padding-right: 0; 
+    padding-left: 20px;
+}
+
+.custom-blog-content {
+    text-align: justify;
+    
+    .highlight {
+      pre {
+        padding: 16px;
+        border-radius: 8px;
+      }
+    }
+  }
+
+.custom-footer-bg {
+    background-color: rgb(37, 37, 37);
+}

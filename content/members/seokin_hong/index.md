@@ -4,15 +4,13 @@ author: Seokin Hong    # your name
 title:  Seokin Hong    # your name
 date:   2024-06-06
 
-images: [
-    images/members/seokin_hong.png  # your profile image path (relavant to assets/)
-]
-
 params:
     position:  "Principal Investigator"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Graduate"]
     job_title: "Assistant Professor"     # all of the students should specify the title of himself as a "Researcher"
     telephone: "+82-31-299-4915"         # phone number (if you don't want to upload your phone number, comment or remove this line!)
     email:     "seokin@skku.edu"         # school email address
+    
+    profile_image: profile.png  # put the filename of the profile image here 
 
     interests: [   # fill out your research interests
         "Computer Architecture", 
@@ -122,22 +120,5 @@ params:
         
 
     publications:
-        - {
-            pub_title: "SAVector: Vectored Systolic Arrays",
-            pub_venue: "IEEE Access",
-            pub_date:  "2024-03-25",
-            pub_url:   ""
-        }
-        - {
-            pub_title: "Facto-CNN: Memory-Efficient CNN Training with Low-rank Tensor Factorization and Lossy Tensor Compression",
-            pub_venue: "15th Asian Conference on Machine Learning (ACML)",
-            pub_date:  "2024-02-27",
-            pub_url:   ""
-        }
-        - {
-            pub_title: "Conveyor: Towards Asynchronous Dataflow in Systolic Array to Exploit Unstructured Sparsity",
-            pub_venue: "2023 IEEE 41st International Conference on Computer Design (ICCD)",
-            pub_date:  "2023-11-06",
-            pub_url:   "/publications/231106-conveyor-sa/"
-        }
+        - "/publications/231106-conveyor-sa/"
 ---

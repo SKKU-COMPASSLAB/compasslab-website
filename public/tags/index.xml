@@ -16,10 +16,10 @@
       <description></description>
     </item>
     <item>
-      <title>Emoji</title>
-      <link>http://222.251.144.43:1313/tags/emoji/</link>
+      <title>Memories</title>
+      <link>http://222.251.144.43:1313/tags/memories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://222.251.144.43:1313/tags/emoji/</guid>
+      <guid>http://222.251.144.43:1313/tags/memories/</guid>
       <description></description>
     </item>
     <item>
@@ -76,6 +76,20 @@
       <link>http://222.251.144.43:1313/tags/text/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://222.251.144.43:1313/tags/text/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Emoji</title>
+      <link>http://222.251.144.43:1313/tags/emoji/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://222.251.144.43:1313/tags/emoji/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://222.251.144.43:1313/tags/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://222.251.144.43:1313/tags/projects/</guid>
       <description></description>
     </item>
   </channel>

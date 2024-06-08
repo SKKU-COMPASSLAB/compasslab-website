@@ -9,6 +9,41 @@
     <lastBuildDate>Thu, 06 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://222.251.144.43:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Computer Architecture</title>
+      <link>http://222.251.144.43:1313/projects/computer_architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://222.251.144.43:1313/projects/computer_architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Memory System</title>
+      <link>http://222.251.144.43:1313/projects/memory_system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://222.251.144.43:1313/projects/memory_system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Operating Systems</title>
+      <link>http://222.251.144.43:1313/projects/operating_systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://222.251.144.43:1313/projects/operating_systems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Accelerator</title>
+      <link>http://222.251.144.43:1313/projects/accelerator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://222.251.144.43:1313/projects/accelerator/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Near Data Processing / Processing in Memory</title>
+      <link>http://222.251.144.43:1313/projects/near_data_processing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://222.251.144.43:1313/projects/near_data_processing/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Gwangeun Byeon</title>
       <link>http://222.251.144.43:1313/members/gwangeun_byeon/</link>
       <pubDate>Thu, 06 Jun 2024 00:00:00 +0000</pubDate>
@@ -34,7 +69,21 @@
       <link>http://222.251.144.43:1313/about/</link>
       <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://222.251.144.43:1313/about/</guid>
-      <description>The SKKU Computer Architecture and Systems Lab (COMPASS LAB) is a computer architecture research group in the Department of Electrical and Computer Engineering at SKKU.</description>
+      <description>Introduction to COMPASSLAB The SKKU Computer Architecture and Systems Lab (COMPASS LAB) is a computer architecture research group in the Department of Electrical and Computer Engineering at SKKU.</description>
+    </item>
+    <item>
+      <title>News</title>
+      <link>http://222.251.144.43:1313/news/</link>
+      <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://222.251.144.43:1313/news/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Schedule</title>
+      <link>http://222.251.144.43:1313/schedule/</link>
+      <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://222.251.144.43:1313/schedule/</guid>
+      <description></description>
     </item>
     <item>
       <title>Conveyor: Towards Asynchronous Dataflow in Systolic Array to Exploit Unstructured Sparsity</title>
@@ -42,6 +91,13 @@
       <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
       <guid>http://222.251.144.43:1313/publications/231106-conveyor-sa/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>ICCD2023 (Washington, USA)</title>
+      <link>http://222.251.144.43:1313/memories/231106-iccd2023/</link>
+      <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://222.251.144.43:1313/memories/231106-iccd2023/</guid>
+      <description>Memories in ICCD2023 ICCD2023 is held at Washington DC, USA. Seongwook, Sihyung and Yoonho attend to the ICCD2023 conference to publically present the research work.</description>
     </item>
     <item>
       <title>Markdown Syntax Guide</title>

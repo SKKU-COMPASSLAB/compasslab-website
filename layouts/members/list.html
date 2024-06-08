@@ -1,17 +1,7 @@
 {{ define "main" }}
   <section class="section blog-list py-5">
     <div class="container">
-      <!-- <div class="row justify-content-center pb-5">
-        <div class="col-12 col-xl-6">
-          {{ with .Title }}
-            <h2 class="fs-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
-          {{ end }}
-          {{ with .Params.description }}
-            <p class="text-black-61 text-center pb-3">{{ . }}</p>
-          {{ end }}
-        </div>
-      </div> -->
-
+      <!-- START: Pringcipal Investigator -->
       <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">Principal Investigator</h3>
       <div class="row g-4 pb-5">
         {{ range (.Paginate .RegularPages).Pages }}
@@ -19,7 +9,7 @@
             <div class="col-12 col-md-6 col-lg-3">
               <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
                 <div class="aspect-ratio-1x1">
-                  {{ with ( partial "utilities/get-featured-image.html" . ) }}
+                  {{ with (.Resources.ByType "image").GetMatch .Params.Profile_image }}
                     {{ partial "utilities/image-portrait" . }}
                   {{ end }}
                 </div>
@@ -48,7 +38,9 @@
           {{ end }}
         {{ end }}
       </div>
-
+      <!-- END -->
+      
+      <!-- START: PhD Course -->
       <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">PhD Course</h3>
       <div class="row g-4 pb-5">
         {{ $cnt := 0 }}
@@ -57,7 +49,7 @@
             <div class="col-12 col-md-6 col-lg-3">
               <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
                 <div class="aspect-ratio-1x1">
-                  {{ with ( partial "utilities/get-featured-image.html" . ) }}
+                  {{ with (.Resources.ByType "image").GetMatch .Params.Profile_image }}
                     {{ partial "utilities/image-portrait" . }}
                   {{ end }}
                 </div>
@@ -79,7 +71,9 @@
           <h5 class="fw-semibold" style="text-align: center;"> There's no PhD course students! </h5>
         {{ end }}
       </div>
+      <!-- END -->
 
+      <!-- START: Master Course -->
       <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">Master Course</h3>
       <div class="row g-4 pb-5">
         {{ $cnt := 0 }}
@@ -88,7 +82,7 @@
             <div class="col-12 col-md-6 col-lg-3">
               <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
                 <div class="aspect-ratio-1x1">
-                  {{ with ( partial "utilities/get-featured-image.html" . ) }}
+                  {{ with (.Resources.ByType "image").GetMatch .Params.Profile_image }}
                     {{ partial "utilities/image-portrait" . }}
                   {{ end }}
                 </div>
@@ -110,7 +104,9 @@
           <h5 class="fw-semibold" style="text-align: center;"> There's no master course students! </h5>
         {{ end }}
       </div>
+      <!-- END -->
 
+      <!-- START: Graduates -->
       <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">Graduate</h3>
       <div class="row g-4 pb-5">
         {{ $cnt := 0 }}
@@ -119,7 +115,7 @@
             <div class="col-12 col-md-6 col-lg-3">
               <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
                 <div class="aspect-ratio-1x1">
-                  {{ with ( partial "utilities/get-featured-image.html" . ) }}
+                  {{ with (.Resources.ByType "image").GetMatch .Params.Profile_image }}
                     {{ partial "utilities/image-portrait" . }}
                   {{ end }}
                 </div>
@@ -141,6 +137,40 @@
           <h5 class="fw-semibold" style="text-align: center;"> There's no graduate course students! </h5>
         {{ end }}
       </div>
+      <!-- END -->
+
+      <!-- START: Alumni -->
+      <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">Alumni</h3>
+      <div class="row g-4 pb-5">
+        {{ $cnt := 0 }}
+        {{ range (.Paginate .RegularPages).Pages }}
+          {{ if eq .Params.Position "Alumni" }}
+            <div class="col-12 col-md-6 col-lg-3">
+              <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
+                <div class="aspect-ratio-1x1">
+                  {{ with (.Resources.ByType "image").GetMatch .Params.Profile_image }}
+                    {{ partial "utilities/image-portrait" . }}
+                  {{ end }}
+                </div>
+                <div class="card-body" style="padding: 16px; padding-left: 10%; padding-right: 10%;">
+                  <h5 class="card-title fw-semibold" style="text-align: center;">{{ .Title }}</h5>
+                  <ul style="list-style-position: outside;">
+                    {{ range .Params.Interests }}
+                      <li class="text-black-61" style="margin: 0px; margin-left: 10px; margin-right: 10px">{{ . }}</li>
+                    {{ end }}
+                  </ul>
+                </div>
+              </a>
+            </div>
+            {{ $cnt = add $cnt 1 }}
+          {{ end }}
+        {{ end }}
+
+        {{ if eq $cnt 0 }}
+          <h5 class="fw-semibold" style="text-align: center;"> There's no alumni! </h5>
+        {{ end }}
+      </div>
+      <!-- END -->
 
       <div class="row pb-5">
         {{ template "_internal/pagination.html" . }}
