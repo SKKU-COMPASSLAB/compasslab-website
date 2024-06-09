@@ -2,7 +2,7 @@
 layout: memories-info  # FIXED! DO NOT CHANGE!
 author: "Seongwook Kim"   # your name
 title:  "ICCD2023 (Washington, USA)"  # publication title
-date:   "2023-11-06"  # date
+date:   2023-11-06  # date
 
 params:
     gallery:

@@ -1,0 +1,17 @@
+<section class="section services py-5">
+  <div class="container">
+    <div class="row justify-content-center pb-4">
+      <div class="col-12 col-xl-6" id="recent_news">
+        <h3 class="fs-1 fw-bold text-center text-primary pb-3">Recent News</h3>
+      </div>
+    </div>
+    <div class="row g-4 pb-3">
+      <ul style="list-style-position: outside; margin-top: 0px; margin-bottom: 0px">
+        {{ range first 10 .Params.News }}
+          <li class="text-black-61 fs-5" style="margin: 0px; margin-left: 30px; margin-bottom: 5px;"> {{ . }} </li>
+        {{ end }}
+      </ul>
+    </div>
+    <a class="btn btn-outline-primary" style="margin-left: 20px;" href="news">See More</a>
+  </div>
+</section>

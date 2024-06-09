@@ -1,7 +1,7 @@
 <footer class="shared footer custom-footer-bg py-5">
   <div class="container">
     <div class="row pb-5">
-      <div class="col-12 col-xl-4 text-center text-xl-start pb-4">
+      <div class="col-12 col-xl-5 text-center text-xl-start pb-4">
         <h4 class="fs-4 fw-semibold text-uppercase text-light">{{ .Site.Title }}</h4>
         <p class="small text-light">{{ .Site.Params.description }}</p>
         {{ with .Site.Params.social }}
@@ -13,7 +13,7 @@
         </ul>
         {{ end }}
       </div>
-      <div class="col-12 col-xl-2 text-center text-xl-start pb-4">
+      <!-- <div class="col-12 col-xl-2 text-center text-xl-start pb-4">
         <h5 class="fs-6 fw-semibold text-light">About us</h5>
         <ul class="list-unstyled">
           {{ range .Site.Menus.footer }}
@@ -22,8 +22,8 @@
             </li>
           {{ end }}
         </ul>
-      </div>
-      <div class="col-12 col-xl-3 text-center text-xl-start pb-4">
+      </div> -->
+      <div class="col-12 col-xl-4 text-center text-xl-start pb-4">
         <h5 class="fs-6 fw-semibold text-light">Location</h5>
         <ul class="list-unstyled">
           {{ range .Site.Params.location }}
@@ -34,7 +34,7 @@
           {{ end }}
         </ul>
       </div>
-      <div class="col-12 col-xl-3 text-center text-xl-start pb-4">
+      <div class="col-12 col-xl-2 text-center text-xl-start pb-4">
         <h5 class="fs-6 fw-semibold text-light">Contact us</h5>
         {{ range .Site.Params.contact }}
           <p class="small text-light mb-1">{{ . }}</p>

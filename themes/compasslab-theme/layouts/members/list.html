@@ -3,41 +3,17 @@
     <div class="container">
       <!-- START: Pringcipal Investigator -->
       <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">Principal Investigator</h3>
-      <div class="row g-4 pb-5">
-        {{ range (.Paginate .RegularPages).Pages }}
-          {{ if eq .Params.Position "Principal Investigator" }}
-            <div class="col-12 col-md-6 col-lg-3">
-              <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
-                <div class="aspect-ratio-1x1">
-                  {{ with (.Resources.ByType "image").GetMatch .Params.Profile_image }}
-                    {{ partial "utilities/image-portrait" . }}
-                  {{ end }}
-                </div>
-                <div class="card-body" style="padding: 16px; padding-left: 10%; padding-right: 10%;">
-                  <h5 class="card-title fw-semibold" style="text-align: center;">{{ .Title }}</h5>
-                </div>
-              </a>
+      
+      {{ range (.Paginate .RegularPages).Pages }}
+        {{ if eq .Params.Position "Principal Investigator" }}
+          <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
+            <div class="row g-4 pb-5">
+              {{ partial "utilities/members-detailed-portrait" . }}
             </div>
-
-            <div class="col-12 col-md-6 col-lg-8">
-              <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
-                <h5 class="text-black-61" style="margin: 10px; margin-bottom: 5px"><b>Biography</b></h5>
-                <p class="text-black-61" style="margin: 10px; margin-top: 0px; text-align: justify">{{ .Params.Biography }}</p>
-
-                <h5 class="text-black-61" style="margin: 10px; margin-bottom: 5px"><b>Research Interests</b></h5>
-                <ul style="list-style-position: outside;">
-                  {{ range .Params.Interests }}
-                    <li class="text-black-61" style="margin: 0px; margin-left: 10px; margin-right: 10px">{{ . }}</li>
-                  {{ end }}
-                </ul>
-                
-                <h5 class="text-black-61" style="margin: 10px; margin-bottom: 5px"><b>Contact</b></h5>
-                <p class="text-black-61" style="margin: 10px; margin-top: 0px"><b>Email: </b>{{ .Params.Email }} &nbsp;&nbsp; <b>Tel: </b>{{ .Params.Telephone }}</p>
-              </a>
-            </div>
-          {{ end }}
+          </a>
         {{ end }}
-      </div>
+      {{ end }}
+      
       <!-- END -->
       
       <!-- START: PhD Course -->
@@ -46,23 +22,7 @@
         {{ $cnt := 0 }}
         {{ range (.Paginate .RegularPages).Pages }}
           {{ if eq .Params.Position "PhD Course" }}
-            <div class="col-12 col-md-6 col-lg-3">
-              <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
-                <div class="aspect-ratio-1x1">
-                  {{ with (.Resources.ByType "image").GetMatch .Params.Profile_image }}
-                    {{ partial "utilities/image-portrait" . }}
-                  {{ end }}
-                </div>
-                <div class="card-body" style="padding: 16px; padding-left: 10%; padding-right: 10%;">
-                  <h5 class="card-title fw-semibold" style="text-align: center;">{{ .Title }}</h5>
-                  <ul style="list-style-position: outside;">
-                    {{ range .Params.Interests }}
-                      <li class="text-black-61" style="margin: 0px; margin-left: 10px; margin-right: 10px">{{ . }}</li>
-                    {{ end }}
-                  </ul>
-                </div>
-              </a>
-            </div>
+            {{ partial "utilities/members_portrait" . }}
             {{ $cnt = add $cnt 1 }}
           {{ end }}
         {{ end }}
@@ -79,23 +39,7 @@
         {{ $cnt := 0 }}
         {{ range (.Paginate .RegularPages).Pages }}
           {{ if eq .Params.Position "Master Course" }}
-            <div class="col-12 col-md-6 col-lg-3">
-              <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
-                <div class="aspect-ratio-1x1">
-                  {{ with (.Resources.ByType "image").GetMatch .Params.Profile_image }}
-                    {{ partial "utilities/image-portrait" . }}
-                  {{ end }}
-                </div>
-                <div class="card-body" style="padding: 16px; padding-left: 10%; padding-right: 10%;">
-                  <h5 class="card-title fw-semibold" style="text-align: center;">{{ .Title }}</h5>
-                  <ul style="list-style-position: outside;">
-                    {{ range .Params.Interests }}
-                      <li class="text-black-61" style="margin: 0px; margin-left: 10px; margin-right: 10px">{{ . }}</li>
-                    {{ end }}
-                  </ul>
-                </div>
-              </a>
-            </div>
+            {{ partial "utilities/members_portrait" . }}
             {{ $cnt = add $cnt 1 }}
           {{ end }}
         {{ end }}
@@ -112,23 +56,7 @@
         {{ $cnt := 0 }}
         {{ range (.Paginate .RegularPages).Pages }}
           {{ if eq .Params.Position "Graduate" }}
-            <div class="col-12 col-md-6 col-lg-3">
-              <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
-                <div class="aspect-ratio-1x1">
-                  {{ with (.Resources.ByType "image").GetMatch .Params.Profile_image }}
-                    {{ partial "utilities/image-portrait" . }}
-                  {{ end }}
-                </div>
-                <div class="card-body" style="padding: 16px; padding-left: 10%; padding-right: 10%;">
-                  <h5 class="card-title fw-semibold" style="text-align: center;">{{ .Title }}</h5>
-                  <ul style="list-style-position: outside;">
-                    {{ range .Params.Interests }}
-                      <li class="text-black-61" style="margin: 0px; margin-left: 10px; margin-right: 10px">{{ . }}</li>
-                    {{ end }}
-                  </ul>
-                </div>
-              </a>
-            </div>
+            {{ partial "utilities/members_portrait" . }}
             {{ $cnt = add $cnt 1 }}
           {{ end }}
         {{ end }}
@@ -145,23 +73,7 @@
         {{ $cnt := 0 }}
         {{ range (.Paginate .RegularPages).Pages }}
           {{ if eq .Params.Position "Alumni" }}
-            <div class="col-12 col-md-6 col-lg-3">
-              <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
-                <div class="aspect-ratio-1x1">
-                  {{ with (.Resources.ByType "image").GetMatch .Params.Profile_image }}
-                    {{ partial "utilities/image-portrait" . }}
-                  {{ end }}
-                </div>
-                <div class="card-body" style="padding: 16px; padding-left: 10%; padding-right: 10%;">
-                  <h5 class="card-title fw-semibold" style="text-align: center;">{{ .Title }}</h5>
-                  <ul style="list-style-position: outside;">
-                    {{ range .Params.Interests }}
-                      <li class="text-black-61" style="margin: 0px; margin-left: 10px; margin-right: 10px">{{ . }}</li>
-                    {{ end }}
-                  </ul>
-                </div>
-              </a>
-            </div>
+            {{ partial "utilities/members_portrait" . }}
             {{ $cnt = add $cnt 1 }}
           {{ end }}
         {{ end }}

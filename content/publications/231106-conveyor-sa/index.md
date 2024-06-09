@@ -2,7 +2,7 @@
 layout: publication_info  # FIXED! DO NOT CHANGE!
 author: "Seongwook Kim"   # your name (do not specify the publication authors, please specify publication authors at "pub_authors")
 title:  "Conveyor: Towards Asynchronous Dataflow in Systolic Array to Exploit Unstructured Sparsity"  # publication title
-date:   "2023-11-06"  # publication date (not the blog posting date...)
+date:   2023-11-06  # publication date (not the blog posting date...)
 
 description: |  # provide a brief explanation of your work!
     Systolic array (SA) architecture efficiently offers parallel computation using a simple data movement across processing elements.

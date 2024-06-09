@@ -1,0 +1,29 @@
+<div class="col-12 col-md-6 col-lg-3">
+  <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
+    <!-- START: Show Portrait Image -->
+    <div class="aspect-ratio-1x1">
+      {{ $profile_shown := false }}
+      {{ with (.Resources.ByType "image").GetMatch .Params.Profile_image }}
+        {{ $profile_shown = true }}
+        {{ partial "utilities/image-portrait" . }}
+      {{ end }}
+      {{ if not $profile_shown }}
+        {{ with resources.Get "/images/unknown-member.png" }}
+        {{ partial "utilities/image-portrait" . }}
+        {{ end }}
+      {{ end }}
+    </div>
+    <!-- END -->
+
+    <!-- START: Show Personal Information (Name, Research Interests) -->
+    <div class="card-body" style="padding: 16px; padding-left: 10%; padding-right: 10%;">
+      <h5 class="card-title fw-semibold" style="text-align: center;">{{ .Title }}</h5>
+      <ul style="list-style-position: outside;">
+        {{ range .Params.Interests }}
+        <li class="text-black-61" style="margin: 0px; margin-left: 10px; margin-right: 10px">{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+    <!-- END -->
+  </a>
+</div>

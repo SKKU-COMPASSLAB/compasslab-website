@@ -4,40 +4,12 @@
       <div class="row justify-content-center pb-5">
         <div class="col-12">
           {{ with .Title }}
-            <h2 class="display-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
+            <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">Members</h3>
           {{ end }}
           
           <!-- START: Personal Information -->
           <div class="row g-4 pb-5">
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="card text-decoration-none h-100" style="border-width: 0;">
-                <div class="aspect-ratio-1x1">
-                  {{ with (.Resources.ByType "image").GetMatch .Params.Profile_image }}
-                    {{ partial "utilities/image-portrait" . }}
-                  {{ end }}
-                </div>
-                <div class="card-body" style="padding: 16px; padding-left: 10%; padding-right: 10%;">
-                  <h5 class="card-title fw-semibold" style="text-align: center;">{{ .Title }}</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-8">
-              <div class="card text-decoration-none h-100" style="border-width: 0;">
-                <h5 class="text-black-61" style="margin: 10px; margin-bottom: 5px"><b>Biography</b></h5>
-                <p class="text-black-61" style="margin: 10px; margin-top: 0px; text-align: justify">{{ .Params.Biography }}</p>
-
-                <h5 class="text-black-61" style="margin: 10px; margin-bottom: 5px"><b>Research Interests</b></h5>
-                <ul style="list-style-position: outside;">
-                  {{ range .Params.Interests }}
-                    <li class="text-black-61" style="margin: 0px; margin-left: 10px; margin-right: 10px">{{ . }}</li>
-                  {{ end }}
-                </ul>
-                
-                <h5 class="text-black-61" style="margin: 10px; margin-bottom: 5px"><b>Contact</b></h5>
-                <p class="text-black-61" style="margin: 10px; margin-top: 0px"><b>Email: </b>{{ .Params.Email }} &nbsp;&nbsp; <b>Tel: </b>{{ .Params.Telephone }}</p>
-              </div>
-            </div>
+            {{ partial "utilities/members-detailed-portrait" . }}
           </div>
           <!-- END -->
 
@@ -93,23 +65,12 @@
           <!-- START: Publications -->
           {{ if .Params.Enable_sections.Enable_publications }}
             <div class="row g-4 pb-5">
-              <h5 class="text-black-61 fs-4"><b>Publications</b></h5>
+              <h5 class="text-black-61 fs-4"><b>Major Publications</b></h5>
               <ul style="list-style-position: outside; margin-top: 0px; margin-bottom: 0px">
                 {{ $site := .Site }}
                 {{ range .Params.Publications }}
-                  {{ $pub_url := . }}
                   {{ with $site.GetPage . }}
-                    {{ $pub_title := .Title            }}
-                    {{ $pub_venue := .Params.Pub_venue }}
-                    {{ $pub_date  := .Params.Pub_date  }}
-                    <div style="width: 100%; padding: 10px; padding-left: 0px;">
-                      <a class="card text-decoration-none h-100" href="{{ $pub_url }}">
-                        <div class="card-body">
-                          <h5 class="card-title fw-semibold">{{ $pub_title}}</h5>
-                          <p class="card-text text-black-61" style="display: inline-block;">{{ $pub_venue }}, {{ $pub_date }}</p>
-                        </div>
-                      </a>
-                    </div>
+                    {{ partial "utilities/publication-card" . }}
                   {{ end }}
                 {{ end }}
               </ul>

@@ -5,7 +5,7 @@ title:  Seokin Hong    # your name
 date:   2024-06-06
 
 params:
-    position:  "Principal Investigator"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Graduate"]
+    position:  "Principal Investigator"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Graduate", Alumni]
     job_title: "Assistant Professor"     # all of the students should specify the title of himself as a "Researcher"
     telephone: "+82-31-299-4915"         # phone number (if you don't want to upload your phone number, comment or remove this line!)
     email:     "seokin@skku.edu"         # school email address
@@ -21,15 +21,15 @@ params:
         I am an Assistant Professor in the Department of Semiconductor Systems Engineerings at Sungkyunkwan University (SKKU). My major research experiences and interests include the design of low power, reliable, and high-performance microarchitectures and memory systems. I received the PhD in Computer Science from KAIST, Korea, in 2015. Prior to joining SKKU, I was a Research Scientist at IBM TJ Watson Research Center and a Senior Engineer at Samsung Electronics.
 
     enable_sections:
-        enable_experiences:   true
-        enable_awards_honers: true
-        enable_activities:    true
-        enable_publications:  true
+        enable_experiences:   true  # enable "Professional Experience" section
+        enable_awards_honers: true  # enable "Awards & Honers" section
+        enable_activities:    true  # enable "Professional Activities" section
+        enable_publications:  true  # enable "Major Publications" section
 
-    experiences:
+    experiences:  # provide your professional experiences
         - {
-            exp_from: "2021",
-            exp_to:   "",
+            exp_from: "2021",  # start-date of this experience
+            exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
             exp_desc: "Assistant Professor at Sungkyunkwan University"
         }
         - {
@@ -63,15 +63,15 @@ params:
             exp_desc: "Software Engineer Intern at SSM (Samsung Software Membership)"
         }
 
-    awards_honer:
+    awards_honer:  # provide the list of awards that you won
         - 2014 Best Paper Nominee, IEEE International Conference on Computer Design (ICCD'14)
         - 2013 Best Paper Award, Design Automation and Test in Europe Conference (DATE’13)
         - 2010 Best Paper Award, IEEE International Conference on Computer Design (ICCD’10)
 
-    activities:
-        - {
-            act_type: "Editorial Board Member",
-            act_desc: "IEMEK Journal of Embedded Systems and Applications"
+    activities:  # provide list of professional activities
+        - { 
+            act_type: "Editorial Board Member",  # type of the activity
+            act_desc: "IEMEK Journal of Embedded Systems and Applications"  # detailed description of the activity
         }
         - {
             act_type: "Program Committee",
@@ -119,6 +119,7 @@ params:
         }
         
 
-    publications:
+    publications:  # list your publications -> provide it as a link through the publicaiton page
+        - "/publications/240525-sa-vector/"
         - "/publications/231106-conveyor-sa/"
 ---
