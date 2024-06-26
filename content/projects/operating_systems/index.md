@@ -9,5 +9,8 @@ params:
     pub_class: "OS"  # FIXED! DO NOT CHANGE!
 
     pub_desc: |
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        OS (Operating System) is a bridge between hardware and software, managing resources such as memory, processors, and storage devices efficiently. OS enables abstraction and standardization across diverse hardware platforms, making itself crucial in modern computer architectures. Furthermore, operating systems enforce security mechanisms to protect data and resources from unauthorized access or malicious software.
+
+    enable_related_projects: false
+    related_projects:
 ---

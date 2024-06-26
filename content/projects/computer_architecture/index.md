@@ -5,9 +5,12 @@ title:  "Computer Architecture"  # publication title
 weight: 10  # print order of projects
 
 params:
-    pub_thumbnail: "thumbnail.png"  # FIXED! DO NOT CHANGE!
+    pub_thumbnail: "thumbnail-ca.png"  # FIXED! DO NOT CHANGE!
     pub_class: "CA"  # FIXED! DO NOT CHANGE!
 
     pub_desc: |
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        The term "computer" refers initially to people who performed calculations manually or with mechanical aids. Later, in the mid-20th century, the "computer" came to denote electronic devices capable of performing various computational tasks automatically. Since then, computer architecture has been aroused as a field of study that explores the structure and operational principles of computer systems. It focuses on understanding how hardware and software components interact to achieve performance goals and optimize efficiency. Modern computer architectures emphasize energy efficiency and scalability, aiming to maximize performance while minimizing power consumption, which is crucial for mobile devices and data centers.
+
+    enable_related_projects: false
+    related_projects:
 ---

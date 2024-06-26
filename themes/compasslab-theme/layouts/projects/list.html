@@ -11,7 +11,7 @@
       <div class="row g-4 pb-5">
         {{ range sort (.Paginate .RegularPages).Pages "Weight" }}
           <!-- START: Project Info -->
-          <div class="col-12 col-lg-8">
+          <div class="col-12 col-lg-8 pb-5">
             <a class="card text-decoration-none h-100" style="border-width: 0; margin-right: 20px" href="{{ .Permalink }}">
               <h5 class="text-black-61 custom-link"><b>{{ .Title }}</b></h5>
               <p class="text-black-61" style="text-align: justify">{{ .Params.Pub_desc }}</p>
@@ -20,7 +20,7 @@
           <!-- END -->
 
           <!-- START: Project Thumbnail -->
-          <div class="col-12 col-lg-4" style="margin: auto;">
+          <div class="col-12 col-lg-4 pb-5" style="margin: auto;">
             {{ with (.Resources.ByType "image").GetMatch .Params.Pub_thumbnail }}
               <img class="" src="{{ .Permalink }}" alt="{{ .Title }}" style="width: 100%">
             {{ end }}

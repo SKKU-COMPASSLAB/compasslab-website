@@ -9,5 +9,12 @@ params:
     pub_class: "ACC"  # FIXED! DO NOT CHANGE!
 
     pub_desc: |
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        Domain-specific accelerators have been widely adopted in various industries. Some workloads, such as neural network training, AI inference, and recommendation algorithms, employ specific patterns on memory access and resource utilization, making it more efficient to process them using specialized accelerators instead of general-purpose processors, e.g., CPU and GPU. These accelerators have specialized dataflow to optimize the hardware overhead of given workloads. For example, the accelerator can alleviate the bottleneck on the memory interface by reusing the data loaded into the on-chip buffer. The domain-specific accelerators can exploit specialized memory subsystems and processing elements to maximize resource utilization.
+
+    enable_related_projects: true
+    related_projects:
+        - {
+            title: "엣지용 자가지도학습 Flexible SW‧HW 통합 솔루션 개발",
+            fund: "IITP (정보통신기획평가원)"
+        }
 ---
