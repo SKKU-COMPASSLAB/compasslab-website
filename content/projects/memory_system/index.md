@@ -5,7 +5,7 @@ title:  "Memory System"  # publication title
 weight: 20  # print order of projects
 
 params:
-    pub_thumbnail: "thumbnail.png"  # FIXED! DO NOT CHANGE!
+    pub_thumbnail: "thumbnail-ms.png"  # FIXED! DO NOT CHANGE!
     pub_class: "MS"  # FIXED! DO NOT CHANGE!
 
     pub_desc: |
