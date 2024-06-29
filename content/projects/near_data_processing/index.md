@@ -9,5 +9,8 @@ params:
     pub_class: "NDP"  # FIXED! DO NOT CHANGE!
 
     pub_desc: |
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        The traditional von Neumann architecture faces limitations primarily due to the separation of processing units and memory, which leads to data movement bottlenecks and increased latency. In contrast, Processing-in-Memory (PIM) and Near Data Processing (NDP) architectures have gained prominence because they can process the data without incurring costy data transaction across the memory hierarchy. Especially, PIM and NDP architectures offer potential performance gains by optimizing data access and processing while processing workloads such as AI acceleration since they include a large memory-intensive GEMM (General Matrix Multiplication) operation.
+
+    enable_related_projects: false
+    related_projects:
 ---

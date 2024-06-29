@@ -18,8 +18,7 @@ params:
         - "[Aug 2023] Gwangeun and Seongwook's paper has been accepted as a regular paper for ISOCC 2023. Congratulation!"
         - "[Aug 2023] Gwangeun's paper has been accepted for presentation as a poster at PACT2023 [Top-tier conference]. Congratulation!"
         - "[Aug 2023] Prof. Hong will serve on the light program committee of HPCA2024 [Top-tier conference]."
-        - "[May 2023] Our lab will be joining a research group to develop a DNN accelerator supporting self-supervised learning. Funded by IITP (정보통신기
-획평가원)."
+        - "[May 2023] Our lab will be joining a research group to develop a DNN accelerator supporting self-supervised learning. Funded by IITP (정보통신기획평가원)."
         - "[May 2023] Hyungjin, Seongwook, and Yosef's papers have been accepted to ITC-CSCC 2023. Congratulation!"
         - "[March 2023] Yoonho, Wonyoung, and Hyungjin have joined our lab as master's students. Welcome!"
         - "[Feb 2023] Our laboratory has embarked on a project funded by Hanwa Systems to develop on-device DNN inference systems."

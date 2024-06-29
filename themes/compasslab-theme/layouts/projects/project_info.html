@@ -2,7 +2,7 @@
   <section class="section blog-single py-5">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-12 col-xl-6 pb-5">
+        <div class="col-12 col-xl-12 pb-5">
           <h2 class="fs-1 fw-bold text-center text-primary">{{ .Title }}</h2>
         </div>
       </div>
@@ -24,6 +24,26 @@
         </div>
         <!-- END -->
       </div>
+
+      <!-- START: Projects -->
+      {{ if .Params.Enable_related_projects }}
+        <div class="row g-4 pb-5">
+          <h5 class="text-black-61 fs-4"><b>Projects</b></h5>
+          {{ $proj_cnt := 0 }}
+          
+          <ul style="list-style-position: outside; margin-top: 0px; margin-bottom: 0px">
+            {{ range .Params.Related_projects }}
+              {{ partial "utilities/related-project-card" . }}
+              {{ $proj_cnt = add $proj_cnt 1}}
+            {{ end }}
+          </ul>
+          
+          {{ if eq $proj_cnt 0}}
+            <p class="text-black-61 fw-semibold" style="text-align: center;"> There's no publications related to {{ .Title }}! </p>
+          {{ end }}
+        </div>
+      {{ end }}
+      <!-- END -->
 
       <!-- START: Publications -->
       <div class="row g-4 pb-5">
