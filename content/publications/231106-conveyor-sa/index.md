@@ -12,7 +12,7 @@ params:
         - "/members/seongwook_kim"    # if you have author URL in this website, specify the author using the URL
         - "/members/gwangeun_byeon"   
         - "Sihyung Kim"               # if you don't have author URL in this website, specify the name instead... (or you can add lab member to "/members/")
-        - "Hyungjin Kim"
+        - "/members/hyungjin_kim"
         - "/members/seokin_hong"
 
     pub_venue: "2023 IEEE 41st International Conference on Computer Design (ICCD)"  # full venue name (conference and journal name)
