@@ -1,22 +1,19 @@
 ---
 layout: publication_info  # FIXED! DO NOT CHANGE!
 author: "Hoyeon Ryu"   # your name (do not specify the publication authors, please specify publication authors at "pub_authors")
-title:  "CRAN: A Computational Redundancy-aware Accelerator for Convolutional Neural Networks"  # publication title
-date:   2023-06-25  # publication date (not the blog posting date...)
+title:  "LSTM-based Data Prefetcher"  # publication title
+date:   2021-01-31  # publication date (not the blog posting date...)
 
 description: |  # provide a brief explanation of your work!
     TBD
 
 params:
     pub_authors:  # publication authors
-        - "/members/yongjun_kim"
-        - "/members/seongwook_kim"
-        - "Yujin Kim"
-        - "/members/gwangeun_byeon"
-        - "Prashant J. Nair"
+        - "/members/seungtae_lee"
+        - "/members/junhyuk_park"
         - "/members/seokin_hong"
 
-    pub_venue: ""  # full venue name (conference and journal name)
+    pub_venue: "Proc. of Korea Software Congress (KSC)"  # full venue name (conference and journal name)
 
     pub_url:   # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: "thumbnail.png"  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)
@@ -33,5 +30,5 @@ params:
     #   - CA  : Computer Architecture
     #   - OS  : Operating Systems
     #   - NDP : Near Data Processing / Processing In Memory
-    pub_class: "ACC"  # choose any class of the publication
+    pub_class: "MS"  # choose any class of the publication
 ---
