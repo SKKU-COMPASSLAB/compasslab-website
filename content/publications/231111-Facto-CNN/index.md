@@ -9,7 +9,7 @@ description: |  # provide a brief explanation of your work!
 
 params:
     pub_authors:  # publication authors
-        - "Seungtae Lee"    # if you have author URL in this website, specify the author using the URL
+        - "/members/seungtae_lee"    # if you have author URL in this website, specify the author using the URL
         - "Jonghwan Ko"   
         - "/members/seokin_hong"
 
@@ -22,7 +22,10 @@ params:
         Convolutional neural networks (CNNs) are becoming deeper and wider to achieve higher accuracy and lower loss, significantly expanding the computational resources. Especially, training CNN models extensively consumes memory mainly due to storing intermediate feature maps generated in the forward-propagation for calculating the gradient in the backpropagation. The memory usage of the CNN model training escalates with the increase in batch size and the complexity of the model. Therefore, a lightweight training method is essential, especially when the computational resources are limited. In this paper, we propose a CNN training mechanism called Facto-CNN, leveraging low-rank tensor factorization and lossy tensor compression to reduce the memory usage required in training the CNN models. Facto-CNN factorizes the weight tensors of convolutional and fully-connected layers and then only updates one of the factorized tensors for each layer, dramatically reducing the feature map size stored in the memory. To further reduce memory consumption, Facto-CNN compresses the feature maps with a simple lossy compression technique that exploits the value similarity in the feature maps. Our experimental evaluation demonstrates that Facto-CNN reduces the memory usage for storing the feature maps by 68-93% with a trivial accuracy degradation when training the CNN models.
 
     pub_keywords:  # keywords of your publication
-        - Convolutional neural networks
+        - CNN
+        - Training Optimization
+        - Compression
+        - Tensor Factorization
 
     # Publication Classes: choose one of the class specified below (see more details at "config.yaml")
     #   - ACC : Accelerator

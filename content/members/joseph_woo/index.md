@@ -1,7 +1,7 @@
 ---
 layout: personal_info
-author: Hyungjin Kim
-title: Hyungjin Kim
+author: Hoyeon Ryu
+title: Joseph Woo
 date: 2023-12-01
 
 params:

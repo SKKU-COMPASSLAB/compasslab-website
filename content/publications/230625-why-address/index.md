@@ -21,7 +21,14 @@ params:
         The use of NAND Flash-based SSD is on the rise in various domains such as Enterprise, Data centers, Personal computers, and Automotive. However, the address translation in the FTL has been a major performance bottleneck in the SSD systems due to frequent accesses to the L2P (Logical to Physical) mapping table. In this paper, we analyze the access patterns of logical and physical pages across popular storage workloads to find any correlations between them. The results from this paper will help system architects and researchers to design efficient address translation mechanisms for large-capacity SSDs.
 
     pub_keywords:  # keywords of your publication
-        - TBD
+        - Data centers
+        - Correlation
+        - Loading
+        - Microcomputers
+        - Flash memories
+        - Automotive engineering
+        - Solid-State Drive
+        - Address Translation
 
     # Publication Classes: choose one of the class specified below (see more details at "config.yaml")
     #   - ACC : Accelerator

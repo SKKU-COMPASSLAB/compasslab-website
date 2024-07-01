@@ -24,7 +24,24 @@ params:
         In the era of non-volatile memories, the racetrack memory is a promising technology to pack hundreds of bits in a magnetic nanowire. A solid-state read head is grown alongside the nanowire to sense individual bits which are pushed across the head by a shifting force. However, the probabilistic nature of this shifting movement inflicts positional errors. Therefore, robust and low-cost error correcting codes are essential for a reliable alternative in on-chip memories and storage applications. Recent works focus on Varshamov-Tenengolts (VT) codes which can correct all single bit insertions and deletions. However, VT codes are incapable of detecting multiple deletions/insertions. Because a positional error corrupts multiple data words, multi-bit positional error detection is critical for racetrack memories. In this article, we propose a novel positional single error correction and double error detection (P-SECDED) code in the context of racetrack memories with a single read head. In particular, we adopt a postamble-based approach where a VT-encoded codeword appends a carefully selected bit-pattern, stored on the racetrack. We rigorously analyze the limitations of the postamble method, and deduce a criterion for postamble selection. We further provide a methodology to optimize this postamble selection in order to correct all single-bit errors and as much of two-bit errors as possible. Finally, we prove that all incurable two-bit errors are successfully detected. To the best of our knowledge, this work is the first attempt to provide P-SECDED fault-tolerance to three-dimensional racetrack memories which cannot afford multiple read heads.
 
     pub_keywords:  # keywords of your publication
-        - TBD
+        - Decoding
+        - Magnetic heads
+        - Error correction codes
+        - Magnetic domains
+        - Systematics
+        - Nonvolatile memory
+        - Encoding
+        - Magnetic storage
+        - solid-state storage
+        - ultra-dense storage
+        - insertion deletion channels
+        - domain-wall memories
+        - skyrmions memories
+        - VT codes
+        - synchronization errors
+        - NVM
+        - DWM
+        - ECC
 
     # Publication Classes: choose one of the class specified below (see more details at "config.yaml")
     #   - ACC : Accelerator

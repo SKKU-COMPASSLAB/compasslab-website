@@ -1,7 +1,7 @@
 ---
 layout: personal_info
-author: Hyungjin Kim
-title: Hyungjin Kim
+author: Hoyeon Ryu
+title: Seungtea Lee
 date: 2023-12-01
 
 params:
