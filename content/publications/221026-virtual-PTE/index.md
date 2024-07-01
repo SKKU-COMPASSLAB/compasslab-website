@@ -22,7 +22,13 @@ params:
         Address translation is one of the major performance bottlenecks for emerging big data workloads. Since those workloads have large memory footprints and irregular memory access patterns, they suffer from frequent TLB (Translation Lookaside Buffer) misses and frequently incur expensive page walk. By using a large TLB, we can reduce the address translation overheads. However, this approach is not practical due to chip area overheads. In this paper, we propose Virtual PTE Storage to reduce the address translation overheads by dedicating a part of LLC (Last-Level Cache) for PTEs (Page Table Entries). This is driven by the observations that the performance of big data workloads incurring frequent TLB misses is rarely affected by the LLC capacity since they have low localities in memory references. Our experimental results demonstrate that Virtual PTE Storage improves performance by 3.7% on average while reducing energy consumption by 2% on average.
 
     pub_keywords:  # keywords of your publication
-        - TBD
+        - Energy consumption
+        - Big Data
+        - Aerospace electronics
+        - Cache storage
+        - TLB
+        - Page Table
+        - Address Translation
 
     # Publication Classes: choose one of the class specified below (see more details at "config.yaml")
     #   - ACC : Accelerator

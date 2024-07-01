@@ -14,7 +14,7 @@ params:
 
     pub_venue: "IEEE Transactions on Computers ( Volume: 65, Issue: 10, 01 October 2016)"  # full venue name (conference and journal name)
 
-    pub_url: https://ieeexplore.ieee.org/abstract/document/7920827  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
+    pub_url: https://ieeexplore.ieee.org/abstract/document/7370775  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
     pub_thumbnail: ""  # image of the thumbnail (comment this line if you don't have any thumbnail to reveal)
 
     pub_abstract: |  # abstract of your publication

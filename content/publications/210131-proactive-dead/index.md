@@ -9,7 +9,7 @@ description: |  # provide a brief explanation of your work!
 
 params:
     pub_authors:  # publication authors
-        - "Yuze Chen"
+        - "/members/yuze_chen"
         - "/members/seokin_hong"
 
     pub_venue: "2021 International Conference on Electronics, Information, and Communication (ICEIC)"  # full venue name (conference and journal name)
@@ -21,7 +21,13 @@ params:
         Spin Transfer Torque Magnetic Random Access Memory (STT-MRAM) is a promising emerging memory technology for the on-chip caches. It has low read access time and low leakage power. Unfortunately, however, STT-MRAM suffers from its long write latency. This paper proposes a cache management mechanism that evicts the dead-blocks in advance to enable fast writes in the STT-MRAM-based caches. Experimental evaluation shows that the proposed mechanism improves the performance by 7%, on average, compared to a baseline STT-MRAM cache.
 
     pub_keywords:  # keywords of your publication
-        - TBD
+        - Torque
+        - Random access memory
+        - Benchmark testing
+        - System-on-chip
+        - Cache
+        - STT-MRAM
+        - Cache management
 
     # Publication Classes: choose one of the class specified below (see more details at "config.yaml")
     #   - ACC : Accelerator

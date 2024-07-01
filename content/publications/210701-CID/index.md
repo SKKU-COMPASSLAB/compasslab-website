@@ -23,7 +23,16 @@ params:
         Code compression is widely used to reduce the footprint of code memory in cost-sensitive embedded systems. However, despite the small code size, the decompressor and the address translator required to support the code compression incur energy and area overheads. To reduce such overheads while still supporting code compression, we co-architect the instruction cache and decompression system (CID). In CID, each component is placed at the optimal location and the instruction cache is redesigned to recognize the compression state and retain the original address, through the cache division and address space decompression process. As a result of the cache division, the energy consumption and area overheads of the CID instruction cache are reduced. Since the decompressor overhead depends on the code compression technique, we propose a new code compression technique called entropy-based pattern code compression, which reduces overheads of the decompressor. Our experimental results show that the total energy consumption of the instruction cache and decompression system is reduced by up to 29.7 percent and their area is reduced by up to 15.4 percent compared to the post-cache architecture with almost no performance degradation, while achieving an 18.8 percent improvement in the compression ratio compared to the state-of-the-art code compression technique.
 
     pub_keywords:  # keywords of your publication
-        - TBD
+        - Computer architecture
+        - Hardware
+        - Central Processing Unit
+        - Dictionaries
+        - Energy consumption
+        - Embedded systems
+        - Reduced instruction set computing
+        - Code compression
+        - instruction cache
+        - embedded systems
 
     # Publication Classes: choose one of the class specified below (see more details at "config.yaml")
     #   - ACC : Accelerator
