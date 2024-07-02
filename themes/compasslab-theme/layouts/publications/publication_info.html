@@ -11,8 +11,8 @@
         <div>
           <!-- START: Thumbnail -->
           {{ with (.Resources.ByType "image").GetMatch .Params.Pub_thumbnail }}
-            <div class="d-none d-xl-block" style="padding: 30px 10px 0 10px;"></div>
-              <img class="d-none d-xl-block" src="{{ .Permalink }}" alt="{{ .Title }}" style="width: 60%; margin: auto;">
+            <div class="d-none d-xl-block" style="height: 450px; padding: 30px 10px 0 10px; overflow: hidden;">
+              <img class="d-none d-xl-block" src="{{ .Permalink }}" alt="{{ .Title }}" style="width: auto; height: 100%; margin: auto; object-fit: contain; object-position: center;">
             </div>
           {{ end }}
           <!-- END -->
@@ -27,7 +27,6 @@
           
           <div class="pb-3" style="margin-top: 30px;">
             {{ $cls_url := index .Site.Params.PubClasses .Params.Pub_class }}
-            <!-- <a class="text-black-61 fs-3 fw-bold custom-link" href="{{ $cls_url }}">{{ .Params.Pub_class }}</a> -->
             <a class="btn btn-outline-primary fs-5 fw-semibold" style="padding: 2px 5px 2px 5px; margin: 0 5px 5px 0px" href="{{ $cls_url }}">{{ .Params.Pub_class }}</a>
 
             {{ with .Title }}

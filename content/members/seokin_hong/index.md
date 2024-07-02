@@ -22,9 +22,8 @@ params:
 
     enable_sections:
         enable_experiences:   true  # enable "Professional Experience" section
-        enable_awards_honers: true  # enable "Awards & Honers" section
+        enable_awards_honors: true  # enable "Awards & Honors" section
         enable_activities:    true  # enable "Professional Activities" section
-        enable_publications:  true  # enable "Major Publications" section
 
     experiences:  # provide your professional experiences
         - {
@@ -63,7 +62,7 @@ params:
             exp_desc: "Software Engineer Intern at SSM (Samsung Software Membership)"
         }
 
-    awards_honer:  # provide the list of awards that you won
+    awards_honor:  # provide the list of awards that you won
         - 2014 Best Paper Nominee, IEEE International Conference on Computer Design (ICCD'14)
         - 2013 Best Paper Award, Design Automation and Test in Europe Conference (DATE’13)
         - 2010 Best Paper Award, IEEE International Conference on Computer Design (ICCD’10)
@@ -117,9 +116,4 @@ params:
             act_type: "Reviewer",
             act_desc: "IEEE Access"
         }
-        
-
-    publications:  # list your publications -> provide it as a link through the publicaiton page
-        - "/publications/240525-sa-vector/"
-        - "/publications/231106-conveyor-sa/"
 ---

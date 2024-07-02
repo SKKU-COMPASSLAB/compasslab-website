@@ -21,16 +21,12 @@ params:
 
     enable_sections:
         enable_experiences:   false
-        enable_awards_honers: false
+        enable_awards_honors: false
         enable_activities:    false
-        enable_publications:  true
 
     experiences:
 
-    awards_honer:
+    awards_honor:
 
     activities:
-    
-    publications:
-        - "/publications/231106-conveyor-sa/"
 ---
