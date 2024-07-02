@@ -1,27 +1,28 @@
 ---
 layout: personal_info  # FIXED! DO NOT CHANGE!
-author: Gwangeun Byeon   # your name
-title:  Gwangeun Byeon   # your name
+author: Taejeong Kim   # your name
+title:  Taejeong Kim   # your name
 date:   2024-07-02
 
 params:
-    position:  "PhD Course"    # TODO: push your position; the position should be the one between ["Principal Investigator", "PhD Course", "Master Course", "Graduate", Alumni]
+    position:  "Master Course"    # TODO: push your position; the position should be the one between ["Principal Investigator", "PhD Course", "Master Course", "Graduate", Alumni]
     job_title: "Researcher"       # TODO: all of the students should specify the title of himself as a "Researcher"
-    # telephone: ""  # TODO: phone number (if you don't want to upload your phone number, comment or remove this line!)
-    email:     "kebyun@skku.edu"  # TODO: school email address (if you don't want to upload your email address, comment or remove this line!)
+    telephone: ""  # TODO: phone number (if you don't want to upload your phone number, comment or remove this line!)
+    email:     "ab.tj.kim@skku.edu"  # TODO: school email address (if you don't want to upload your email address, comment or remove this line!)
     
     profile_image: profile.jpg  # TODO: put the filename of the profile image here 
 
     interests: [   # TODO: fill out your research interests
         "Computer Architecture", 
-        "Accelerator"
+        "Memory Systems",
+        "CXL"
     ]
 
-    # biography: |   # TODO: fill out your short biography... Introduce yourself! (if you don't want to upload your biography, comment or remove this whole section!)
-       
-
+    biography: |   # TODO: fill out your short biography... Introduce yourself! (if you don't want to upload your biography, comment or remove this whole section!)
+      Hi. I have been working as a system software engineer at Samsung Electronics, where I have been responsible for developing device driver and firmware for PMIC. Through the SSIT course, I joined COMPASS Lab to deepen my understanding of computer architecture. I am currently conducting research in the field of CXL.
+ 
     enable_sections:  # TODO: this section checks whether to show "Experiences", "Awards and Honors", "Activities" (publications will automatically be added to your page)
-        enable_experiences:   false  # enable "Professional Experience" section
+        enable_experiences:   true  # enable "Professional Experience" section
         enable_awards_honors: false  # enable "Awards & Honors" section
         enable_activities:    false  # enable "Professional Activities" section
 
@@ -30,14 +31,9 @@ params:
 
     experiences:  # provide your professional experiences
         - {
-            exp_from: "2021",  # start-date of this experience
+            exp_from: "2016",  # start-date of this experience
             exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
-            exp_desc: "Assistant Professor at Sungkyunkwan University"
-        }
-        - {
-            exp_from: "2018",
-            exp_to:   "2021",
-            exp_desc: "Assistant Professor at Kyungpook National University"
+            exp_desc: "Staff Engineer, Samsung Electronics System LSI Division"
         }
 
     awards_honor:  # provide the list of awards that you won
