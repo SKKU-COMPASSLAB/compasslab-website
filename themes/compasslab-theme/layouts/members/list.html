@@ -4,7 +4,7 @@
       <!-- START: Pringcipal Investigator -->
       <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">Principal Investigator</h3>
       
-      {{ range (.Paginate .RegularPages).Pages }}
+      {{ range .Pages }}
         {{ if eq .Params.Position "Principal Investigator" }}
           <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
             <div class="row g-4 pb-5">
@@ -20,7 +20,7 @@
       <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">PhD Course</h3>
       <div class="row g-4 pb-5">
         {{ $cnt := 0 }}
-        {{ range (.Paginate .RegularPages).Pages }}
+        {{ range .Pages }}
           {{ if eq .Params.Position "PhD Course" }}
             {{ partial "utilities/members_portrait" . }}
             {{ $cnt = add $cnt 1 }}
@@ -37,7 +37,7 @@
       <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">Master Course</h3>
       <div class="row g-4 pb-5">
         {{ $cnt := 0 }}
-        {{ range (.Paginate .RegularPages).Pages }}
+        {{ range .Pages }}
           {{ if eq .Params.Position "Master Course" }}
             {{ partial "utilities/members_portrait" . }}
             {{ $cnt = add $cnt 1 }}
@@ -51,10 +51,10 @@
       <!-- END -->
 
       <!-- START: Graduates -->
-      <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">Graduate</h3>
+      <!-- <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">Graduate</h3>
       <div class="row g-4 pb-5">
         {{ $cnt := 0 }}
-        {{ range (.Paginate .RegularPages).Pages }}
+        {{ range .Pages }}
           {{ if eq .Params.Position "Graduate" }}
             {{ partial "utilities/members_portrait" . }}
             {{ $cnt = add $cnt 1 }}
@@ -62,16 +62,16 @@
         {{ end }}
 
         {{ if eq $cnt 0 }}
-          <h5 class="fw-semibold" style="text-align: center;"> There's no graduate course students! </h5>
+          <h5 class="fw-semibold" style="text-align: center;"> There's no graduate students! </h5>
         {{ end }}
-      </div>
+      </div> -->
       <!-- END -->
 
       <!-- START: Alumni -->
       <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">Alumni</h3>
       <div class="row g-4 pb-5">
         {{ $cnt := 0 }}
-        {{ range (.Paginate .RegularPages).Pages }}
+        {{ range .Pages }}
           {{ if eq .Params.Position "Alumni" }}
             {{ partial "utilities/members_portrait" . }}
             {{ $cnt = add $cnt 1 }}
@@ -84,9 +84,9 @@
       </div>
       <!-- END -->
 
-      <div class="row pb-5">
+      <!-- <div class="row pb-5">
         {{ template "_internal/pagination.html" . }}
-      </div>
+      </div> -->
     </div>
   </section>
 {{ end }}

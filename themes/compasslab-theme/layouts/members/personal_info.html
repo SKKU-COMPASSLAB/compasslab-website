@@ -32,12 +32,12 @@
           {{ end }}
           <!-- END -->
 
-          <!-- START: Professional Awards & Honers -->
-          {{ if .Params.Enable_sections.Enable_awards_honers }}
+          <!-- START: Professional Awards & Honors -->
+          {{ if .Params.Enable_sections.Enable_awards_honors }}
             <div class="row g-4 pb-5">
-              <h5 class="text-black-61 fs-4"><b>Awards and Honers</b></h5>
+              <h5 class="text-black-61 fs-4"><b>Awards and Honors</b></h5>
               <ul style="list-style-position: outside; margin-top: 0px; margin-bottom: 0px">
-                {{ range .Params.Awards_honer }}
+                {{ range .Params.Awards_honor }}
                   <li class="text-black-61 fs-6" style="margin: 0px; margin-left: 30px; margin-bottom: 5px;"> {{ . }} </li>
                 {{ end }}
               </ul>
@@ -63,20 +63,31 @@
           <!-- END -->
 
           <!-- START: Publications -->
-          {{ if .Params.Enable_sections.Enable_publications }}
-            <div class="row g-4 pb-5">
-              <h5 class="text-black-61 fs-4"><b>Major Publications</b></h5>
-              <ul style="list-style-position: outside; margin-top: 0px; margin-bottom: 0px">
-                {{ $site := .Site }}
-                {{ range .Params.Publications }}
-                  {{ with $site.GetPage . }}
+          {{ $current_doc_link := .RelPermalink }}
+          {{ if hasSuffix $current_doc_link "/" }}
+            {{ $current_doc_link = slicestr $current_doc_link 0 (sub (len $current_doc_link) 1) }}
+          {{ end }}
+
+          <div class="row g-4 pb-5">
+            <h5 class="text-black-61 fs-4"><b>Related Publications</b></h5>
+            {{ $pub_cnt := 0 }}
+            <ul style="list-style-position: outside; margin-top: 0px; margin-bottom: 0px">
+              {{ $site := .Site }}
+              {{ with .Site.GetPage "/publications/" }}
+                {{ range .Pages }}
+                  {{ $pub_authors := .Params.Pub_authors }}
+                  {{ if in $pub_authors $current_doc_link }}
                     {{ partial "utilities/publication-card" . }}
+                    {{ $pub_cnt = add $pub_cnt 1}}
                   {{ end }}
                 {{ end }}
-              </ul>
-            </div>
-          {{ end }}
-          <!-- END -->
+              {{ end }}
+            </ul>
+
+            {{ if eq $pub_cnt 0}}
+              <p class="text-black-61 fw-semibold" style="text-align: center;"> There's no publications related to {{ .Title }}! </p>
+            {{ end }}
+          </div>
 
         </div>
       </div>

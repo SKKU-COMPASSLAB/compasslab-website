@@ -1,16 +1,16 @@
 ---
 layout: personal_info  # FIXED! DO NOT CHANGE!
-author: Gwangeun Byeon   # your name
-title:  Gwangeun Byeon   # your name
-date:   2024-07-02
+author: Seokhyun Han   # your name
+title:  Seokhyun Han   # your name
+date:   2024-06-06
 
 params:
-    position:  "PhD Course"    # TODO: push your position; the position should be the one between ["Principal Investigator", "PhD Course", "Master Course", "Graduate", Alumni]
+    position:  "Master Course"    # TODO: push your position; the position should be the one between ["Principal Investigator", "PhD Course", "Master Course", "Graduate", Alumni]
     job_title: "Researcher"       # TODO: all of the students should specify the title of himself as a "Researcher"
-    # telephone: ""  # TODO: phone number (if you don't want to upload your phone number, comment or remove this line!)
-    email:     "kebyun@skku.edu"  # TODO: school email address (if you don't want to upload your email address, comment or remove this line!)
+    # telephone: "+82-31-299-4915"  # TODO: phone number (if you don't want to upload your phone number, comment or remove this line!)
+    email:     "kavin1010@g.skku.edu"  # TODO: school email address (if you don't want to upload your email address, comment or remove this line!)
     
-    profile_image: profile.jpg  # TODO: put the filename of the profile image here 
+    profile_image: profile.jpg  # TODO: put the filename of the profile image here
 
     interests: [   # TODO: fill out your research interests
         "Computer Architecture", 
@@ -18,7 +18,7 @@ params:
     ]
 
     # biography: |   # TODO: fill out your short biography... Introduce yourself! (if you don't want to upload your biography, comment or remove this whole section!)
-       
+    #     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
     enable_sections:  # TODO: this section checks whether to show "Experiences", "Awards and Honors", "Activities" (publications will automatically be added to your page)
         enable_experiences:   false  # enable "Professional Experience" section

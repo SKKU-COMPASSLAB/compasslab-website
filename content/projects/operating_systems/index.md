@@ -5,7 +5,7 @@ title:  "Operating Systems"  # publication title
 weight: 30  # print order of projects
 
 params:
-    pub_thumbnail: "thumbnail.png"  # FIXED! DO NOT CHANGE!
+    pub_thumbnail: "thumbnail-os.png"  # FIXED! DO NOT CHANGE!
     pub_class: "OS"  # FIXED! DO NOT CHANGE!
 
     pub_desc: |

@@ -13,24 +13,36 @@ params:
     profile_image: "profile.jpg"
 
     interests: [
-        'AI Accelerators', 
+        'AI Accelerator', 
         'Memory Compression'
     ]
 
-    biography: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    biography: |
+        I am majoring Electrical and Computer Enginnering as Ph.D student at Sungkyunkwan University. I got Bachelor's degree and Master's degree at Sungkyunkwan University and my research interests include deep learning accelerator architecture and memory compression.
 
     enable_sections:
-        enable_experiences:   false
-        enable_awards_honers: false
+        enable_experiences:   true
+        enable_awards_honors: false
         enable_activities:    false
-        enable_publications:  true
 
     experiences:
+        - {
+            exp_from: "2024",  # start-date of this experience
+            exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
+            exp_desc: "Ph.D Student at Sungkyunkwan University"
+        }
+        - {
+            exp_from: "2024",
+            exp_to:   "2022",
+            exp_desc: "Master's degree at Sungkyunkwan University"
+        }
+        - {
+            exp_from: "2022",
+            exp_to:   "2017",
+            exp_desc: "Bachelor's degree at Sungkyunkwan University"
+        }
 
-    awards_honer:
+    awards_honor:
 
     activities:
-    
-    publications:
-        - "/publications/231106-conveyor-sa/"
 ---
