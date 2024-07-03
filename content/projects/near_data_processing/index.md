@@ -5,7 +5,7 @@ title:  "Near Data Processing / Processing in Memory"  # publication title
 weight: 50  # print order of projects
 
 params:
-    pub_thumbnail: "thumbnail.png"  # FIXED! DO NOT CHANGE!
+    pub_thumbnail: "thumbnail-ndp.png"  # FIXED! DO NOT CHANGE!
     pub_class: "NDP"  # FIXED! DO NOT CHANGE!
 
     pub_desc: |
