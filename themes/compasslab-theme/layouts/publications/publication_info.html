@@ -59,7 +59,7 @@
 
                 <li class="" style="display: inline-block;">
                   {{ if $author_url_exist }}
-                    {{ $author_url := . }}
+                    {{ $author_url := ($site.GetPage .).Permalink }}
                     <a class="text-black-61 fs-5 fw-semibold custom-link" style="margin: 0; padding: 0; padding-right: 20px" href="{{ $author_url }}">{{ $pub_author }}</a>
                   {{ else }}
                     <p class="text-black-61 fs-5 fw-semibold" style="margin: 0; padding: 0; padding-right: 20px">{{ $pub_author }}</p>

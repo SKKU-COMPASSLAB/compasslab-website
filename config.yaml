@@ -42,6 +42,8 @@ params:
     NDP: /projects/near_data_processing
     OS:  /projects/operating_systems
 
+  path_prefix: /compasslab
+
 menus:
   main:
     - name: "Home"
