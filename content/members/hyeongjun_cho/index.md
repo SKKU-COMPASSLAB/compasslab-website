@@ -13,7 +13,7 @@ params:
     profile_image: profile_cho.jpg  # TODO: put the filename of the profile image here 
 
     interests: [   # TODO: fill out your research interests
-        "Domain Specific Accelerator",
+        "AI Accelerator",
         "Processing-In-Memory"
     ]
 

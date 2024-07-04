@@ -64,6 +64,8 @@
 
           <!-- START: Publications -->
           {{ $current_doc_link := .RelPermalink }}
+          <p>{{ $current_doc_link }}</p>
+          <p>{{ .Site.GetPage "/publications/" }}</p>
           {{ if hasSuffix $current_doc_link "/" }}
             {{ $current_doc_link = slicestr $current_doc_link 0 (sub (len $current_doc_link) 1) }}
           {{ end }}
