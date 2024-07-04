@@ -7,7 +7,7 @@ date: 2023-01-01
 params:
     position:  "Master Course"
     job_title: "Researcher"
-    telephone: +82-10-8945-8939
+    # telephone: +82-10-8945-8939
     email:     su8939@skku.edu
 
     profile_image: "profile.jpg"
