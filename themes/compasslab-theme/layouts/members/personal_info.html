@@ -69,6 +69,9 @@
           {{ if hasSuffix $current_doc_link "/" }}
             {{ $current_doc_link = slicestr $current_doc_link 0 (sub (len $current_doc_link) 1) }}
           {{ end }}
+          {{ if hasPrefix $current_doc_link "/compasslab" }}
+            {{ $current_doc_link = slicestr $current_doc_link (len "/compasslab") (len $current_doc_link) }}
+          {{ end }}
 
           <div class="row g-4 pb-5">
             <h5 class="text-black-61 fs-4"><b>Related Publications</b></h5>
