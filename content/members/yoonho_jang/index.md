@@ -2,7 +2,7 @@
 layout: personal_info  # FIXED! DO NOT CHANGE!
 author: Yoonho Jang   # your name
 title:  Yoonho Jang   # your name
-date:   2024-06-06
+date:   2023-01-01
 
 params:
     position:  "PhD Course"    # TODO: push your position; the position should be the one between ["Principal Investigator", "PhD Course", "Master Course", "Graduate", Alumni]

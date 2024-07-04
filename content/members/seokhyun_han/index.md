@@ -2,7 +2,7 @@
 layout: personal_info  # FIXED! DO NOT CHANGE!
 author: Seokhyun Han   # your name
 title:  Seokhyun Han   # your name
-date:   2024-06-06
+date:   2023-07-01
 
 params:
     position:  "Master Course"    # TODO: push your position; the position should be the one between ["Principal Investigator", "PhD Course", "Master Course", "Graduate", Alumni]

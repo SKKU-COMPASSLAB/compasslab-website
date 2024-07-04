@@ -2,7 +2,7 @@
 layout: personal_info
 author: Yongjun Kim
 title: Yongjun Kim
-date: 2023-12-01
+date: 2021-01-01
 
 params:
     position:  "Alumni"

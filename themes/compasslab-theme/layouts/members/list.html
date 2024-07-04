@@ -3,8 +3,10 @@
     <div class="container">
       <!-- START: Pringcipal Investigator -->
       <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">Principal Investigator</h3>
+
+      {{ $member_pages := .Pages.ByDate }}
       
-      {{ range .Pages }}
+      {{ range $member_pages }}
         {{ if eq .Params.Position "Principal Investigator" }}
           <a class="card text-decoration-none h-100" style="border-width: 0;" href="{{ .Permalink }}">
             <div class="row g-4 pb-5">
@@ -20,7 +22,7 @@
       <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">PhD Course</h3>
       <div class="row g-4 pb-5">
         {{ $cnt := 0 }}
-        {{ range .Pages }}
+        {{ range $member_pages }}
           {{ if eq .Params.Position "PhD Course" }}
             {{ partial "utilities/members_portrait" . }}
             {{ $cnt = add $cnt 1 }}
@@ -37,7 +39,7 @@
       <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">Master Course</h3>
       <div class="row g-4 pb-5">
         {{ $cnt := 0 }}
-        {{ range .Pages }}
+        {{ range $member_pages }}
           {{ if eq .Params.Position "Master Course" }}
             {{ partial "utilities/members_portrait" . }}
             {{ $cnt = add $cnt 1 }}
@@ -54,7 +56,7 @@
       <!-- <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">Graduate</h3>
       <div class="row g-4 pb-5">
         {{ $cnt := 0 }}
-        {{ range .Pages }}
+        {{ range $member_pages }}
           {{ if eq .Params.Position "Graduate" }}
             {{ partial "utilities/members_portrait" . }}
             {{ $cnt = add $cnt 1 }}
@@ -71,7 +73,7 @@
       <h3 class="fs-1 fw-bold text-center text-primary pb-3" style="margin-bottom: 40px">Alumni</h3>
       <div class="row g-4 pb-5">
         {{ $cnt := 0 }}
-        {{ range .Pages }}
+        {{ range $member_pages }}
           {{ if eq .Params.Position "Alumni" }}
             {{ partial "utilities/members_portrait" . }}
             {{ $cnt = add $cnt 1 }}

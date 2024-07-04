@@ -2,7 +2,7 @@
 layout: personal_info
 author: Seongwook Kim
 title: Seongwook Kim
-date: 2024-06-06
+date: 2023-01-01
 
 params:
     position:  "Master Course"

@@ -2,7 +2,7 @@
 layout: personal_info
 author: Hoyeon Ryu
 title: Seungtea Lee
-date: 2023-12-01
+date: 2022-01-01
 
 params:
     position:  "Alumni"
@@ -13,7 +13,7 @@ params:
     # profile_image: "profile.jpg"
 
     interests: [
-        'Memory Systems'
+        'AI Optimization'
     ]
 
     enable_sections:

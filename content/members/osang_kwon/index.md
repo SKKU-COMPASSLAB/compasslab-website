@@ -2,7 +2,7 @@
 layout: personal_info  # FIXED! DO NOT CHANGE!
 author: Osang Kwon   # your name
 title:  Osang Kwon   # your name
-date:   2024-07-02
+date:   2021-01-01
  
 params:
     position:  "PhD Course"    # TODO: push your position; the position should be the one between ["Principal Investigator", "PhD Course", "Master Course", "Graduate", Alumni]

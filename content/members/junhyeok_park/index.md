@@ -2,7 +2,7 @@
 layout: personal_info # FIXED! DO NOT CHANGE!
 author: Junhyeok Park # your name
 title: Junhyeok Park # your name
-date: 2024-06-06
+date: 2022-07-01
 
 params:
   position: "Master Course" # TODO: push your position; the position should be the one between ["Principal Investigator", "PhD Course", "Master Course", "Graduate", Alumni]
@@ -15,12 +15,24 @@ params:
     ["Heterogeneous Memory System", "GPU Microarchitecture"]
 
   enable_sections: # TODO: this section checks whether to show "Experiences", "Awards and Honors", "Activities" (publications will automatically be added to your page)
-    enable_experiences: false # enable "Professional Experience" section
+    enable_experiences: true # enable "Professional Experience" section
     enable_awards_honors: true # enable "Awards & Honors" section
     enable_activities: false # enable "Professional Activities" section
 
   # The sections below are optional...
 
+  experiences: # provide your professional experiences
+    - {
+        exp_from: "2022",
+        exp_to:   "",
+        exp_desc: "Combined B.S/M.S program in the Department of Electrical and Computer Engineering at Sungkyunkwan University",
+      }
+    - {
+        exp_from: "2017", # start-date of this experience
+        exp_to:   "2023", # end-date of this experience (make this field empty if you are currently going through this experience)
+        exp_desc: "B.S. in the School of Electronic and Electrical Engineering at Sungkyunkwan University",
+      }
+
   awards_honor: # provide the list of awards that you won
-    - SKKU Summa Cum Laude (2023)
+    - SKKU Summa Cum Laude (B.S)
 ---

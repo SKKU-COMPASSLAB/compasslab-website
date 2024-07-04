@@ -2,7 +2,7 @@
 layout: personal_info  # FIXED! DO NOT CHANGE!
 author: Jiyong Jeong   # your name
 title:  Jiyong Jeong   # your name
-date:   2024-07-02
+date:   2024-01-01
 
 params:
     position:  "Master Course"    # TODO: push your position; the position should be the one between ["Principal Investigator", "PhD Course", "Master Course", "Graduate", Alumni]
