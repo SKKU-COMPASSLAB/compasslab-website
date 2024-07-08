@@ -11,7 +11,7 @@ params:
     pub_authors:  # publication authors
         - "/members/seongwook_kim"    # if you have author URL in this website, specify the author using the URL
         - "/members/gwangeun_byeon"   
-        - "Sihyung Kim"               # if you don't have author URL in this website, specify the name instead... (or you can add lab member to "/members/")
+        - "/members/sihyung_kim"      # if you don't have author URL in this website, specify the name instead... (or you can add lab member to "/members/")
         - "/members/hyungjin_kim"
         - "/members/seokin_hong"
 
