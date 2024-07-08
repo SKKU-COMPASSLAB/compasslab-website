@@ -35,14 +35,14 @@ params:
 
   customCss: ["css/hovering.css"]
 
+  path_prefix: /compasslab
+  
   pubClasses:
     ACC: /projects/accelerator
     CA:  /projects/computer_architecture
     MS:  /projects/memory_system
     NDP: /projects/near_data_processing
     OS:  /projects/operating_systems
-
-  path_prefix: /compasslab
 
 menus:
   main:

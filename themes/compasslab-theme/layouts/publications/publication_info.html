@@ -26,9 +26,13 @@
           {{ end }}
           
           <div class="pb-3" style="padding-top: 30px; vertical-align: middle;">
-            {{ $cls_url := index .Site.Params.PubClasses .Params.Pub_class }}
-            <a class="btn btn-outline-primary fs-5 fw-semibold" style="padding: 0 5px 0 5px; margin: 0 8px 6px 0" href="{{ $cls_url }}">{{ .Params.Pub_class }}</a>
-
+            {{ $site    := .Site }}
+            {{ $pub_cls := .Params.Pub_class }}
+            {{ with index .Site.Params.PubClasses $pub_cls }}
+              {{ $cls_url := ($site.GetPage .).Permalink }}
+              <a class="btn btn-outline-primary fs-5 fw-semibold" style="padding: 0 5px 0 5px; margin: 0 8px 6px 0" href="{{ $cls_url }}">{{ $pub_cls }}</a>
+            {{ end }}
+            
             {{ with .Title }}
               {{ if $pub_url_exist }}
                 <a class="text-black-61 fs-3 fw-bold custom-link" href="{{ $pub_url }}">{{ . }}</a>
