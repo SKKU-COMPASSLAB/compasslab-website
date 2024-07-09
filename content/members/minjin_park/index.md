@@ -19,7 +19,7 @@ params:
     ]
 
     biography: |   # TODO: fill out your short biography... Introduce yourself! (if you don't want to upload your biography, comment or remove this whole section!)
-        Since joining Samsung Electronics' memory business division in 2015, I have been responsible for Pre & Post Silicon verification of SoC products such as UFS and SSD. Through the SSIT Course, I joined COMPASS LAB to deepen my understanding of Computer Architecture and am currently researching the CXL field.
+        Since joining Samsung Electronics Memory Business Division in 2015, I have been responsible for Pre & Post Silicon verification of SoC products such as UFS and SSD. Through the SSIT Course, I joined COMPASS LAB to deepen my understanding of Computer Architecture and am currently researching the CXL field.
 
     enable_sections:  # TODO: this section checks whether to show "Experiences", "Awards and Honors", "Activities" (publications will automatically be added to your page)
         enable_experiences:   true  # enable "Professional Experience" section
