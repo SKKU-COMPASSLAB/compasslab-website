@@ -5,7 +5,7 @@ title:  Seokin Hong    # your name
 date:   2024-06-06
 
 params:
-    position:  "Principal Investigator"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Graduate", Alumni]
+    position:  "Principal Investigator"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Undergraduate", Alumni]
     job_title: "Assistant Professor"     # all of the students should specify the title of himself as a "Researcher"
     telephone: "+82-31-299-4915"         # phone number (if you don't want to upload your phone number, comment or remove this line!)
     email:     "seokin@skku.edu"         # school email address
