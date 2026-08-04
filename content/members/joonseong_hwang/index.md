@@ -5,7 +5,7 @@ title:  Joonseong Hwang    # your name
 date:   2024-09-03
 
 params:
-    position:  "Master Course"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Undergraduate", Alumni]
+    position:  "Alumni"  # one of ["Principal Investigator", "PhD Course", "Master Course", "Undergraduate", Alumni]
     job_title: "Researcher"     # all of the students should specify the title of himself as a "Researcher"
  #   telephone: ""         # phone number (if you don't want to upload your phone number, comment or remove this line!)
     email:     "henrly2@skku.edu"         # school email address
