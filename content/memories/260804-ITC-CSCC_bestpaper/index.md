@@ -9,7 +9,6 @@ params:
         - "gallery/image1.jpg"  # first image will automatically be considered as a thumbnail
         - "gallery/image2.jpg"  # first image will automatically be considered as a thumbnail
         - "gallery/image3.jpg"  # first image will automatically be considered as a thumbnail
-        - "gallery/image4.jpg"  # first image will automatically be considered as a thumbnail
 ---
 
 ### We won the Best Paper Award at ITC-CSCC 2025!
