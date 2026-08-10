@@ -34,6 +34,6 @@ params:
         - {
             exp_from: "2026",  # start-date of this experience
             exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
-            exp_desc: "Master's degree in SKKU(Sungyunkwan University)"
+            exp_desc: "Combined MS/PhD Student at Sungkyunkwan University"
         }
 ---

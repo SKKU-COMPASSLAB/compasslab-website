@@ -13,7 +13,8 @@ params:
 
     interests: [   # fill out your research interests
         "Computer Architecture",
-        "GPU"
+        "NPU",
+        "VLA Model"
     ]
 
     biography: |   # fill out your short biography... Introduce yourself!

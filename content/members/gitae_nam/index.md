@@ -12,13 +12,13 @@ params:
     profile_image: gitae_nam.jpg  # put the filename of the profile image here 
 
     interests: [   # fill out your research interests
-        "Heterogeneous Systems",
-        "CXL",
+        "Accelerator",
+        "Processing-In-Memory",
         "Computer Architecture"
     ]
 
     biography: |   # fill out your short biography... Introduce yourself!
-        I am an undergraduate researcher in the Department of Semiconductor Systems Engineering at Sungkyunkwan University (SKKU). I focus on research in heterogeneous CXL memory systems
+        I am an undergraduate researcher in the Department of Semiconductor Systems Engineering at Sungkyunkwan University (SKKU). I focus on research in Processing-In-Memory
 
     enable_sections:
         enable_experiences:   true  # enable "Professional Experience" section
