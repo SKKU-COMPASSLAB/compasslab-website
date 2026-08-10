@@ -13,7 +13,7 @@ params:
         - "/members/minkyu_choi"
         - "/members/seokin_hong"
 
-    pub_venue: "2026 International Conference on Parallel Architectures and Compilation Techniques (PACT) (Poster)"  # full venue name (conference and journal name)
+    pub_venue: "2026 International Conference on Parallel Architectures and Compilation Techniques (PACT 2026) (Poster)"  # full venue name (conference and journal name)
     pub_short_venue: "PACT 2026"
 
     # pub_url: https://dl.acm.org/doi/10.1145/3656019.3676900  # URL to get access to the publication (comment this line if you don't have publicaiton URL)
