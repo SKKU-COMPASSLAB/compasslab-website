@@ -10,6 +10,6 @@ params:
         - "gallery/image2.jpg"  # first image will automatically be considered as a thumbnail
 ---
 
-### 2026 Master's and Bachelor's Graduation
+### 2026 Master's Graduation
 
 Joonseong Hwang, Jiyong Jeong earned their Master’s degrees
