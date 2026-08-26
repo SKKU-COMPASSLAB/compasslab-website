@@ -5,7 +5,7 @@ title:  Jiyong Jeong   # your name
 date:   2024-01-01
 
 params:
-    position:  "Master Course"    # TODO: push your position; the position should be the one between ["Principal Investigator", "PhD Course", "Master Course", "Graduate", Alumni]
+    position:  "Alumni"    # TODO: push your position; the position should be the one between ["Principal Investigator", "PhD Course", "Master Course", "Graduate", Alumni]
     job_title: "Researcher"       # TODO: all of the students should specify the title of himself as a "Researcher"
     #telephone: "+82-10-9958-3871"  # TODO: phone number (if you don't want to upload your phone number, comment or remove this line!)
     email:     "pppooo112@skku.edu"  # TODO: school email address (if you don't want to upload your email address, comment or remove this line!)
@@ -36,7 +36,7 @@ params:
         }
         - {
             exp_from: "2024",
-            exp_to:   "",
+            exp_to:   "2026",
             exp_desc: "Master's degree at Sungkyunkwan University"
         }
 

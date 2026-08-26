@@ -35,8 +35,8 @@ params:
             exp_desc: "Bachelor's degree at Korea Aerospace University(KAU)"
         }
         - {
-            exp_from: "2025",  # start-date of this experience
-            exp_to:   "",      # end-date of this experience (make this field empty if you are currently going through this experience)
+            exp_from: "2024",  # start-date of this experience
+            exp_to:   "2026",      # end-date of this experience (make this field empty if you are currently going through this experience)
             exp_desc: "Master's degree in SKKU(Sungyunkwan University)"
         }
         
